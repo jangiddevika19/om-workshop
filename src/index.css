@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------
+   OM WORKSHOP — warm editorial design tokens
+   Colours live in tailwind.config.js; layout tokens live here.
+   ------------------------------------------------------------------ */
+:root {
+  --nav-h: 5rem;
+  /* left/right page edge that matches .wrap (max-w-7xl + responsive gutter) */
+  --gutter: 1.25rem;
+  --edge: calc(max(0px, (100vw - 80rem) / 2) + var(--gutter));
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (min-width: 640px) { :root { --gutter: 2rem; } }
+@media (min-width: 1024px) { :root { --gutter: 2.5rem; } }
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { @apply bg-cream font-body text-ink antialiased; overflow-x: clip; }
+  h1, h2, h3, h4 { @apply font-display font-normal; letter-spacing: -0.015em; font-variation-settings: 'opsz' 96; }
+  ::selection { background: #85613F; color: #FFFDF9; }
+  :focus-visible { outline: 2px solid #85613F; outline-offset: 3px; }
+  img { @apply max-w-full; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
+  .section { @apply py-20 sm:py-24 lg:py-32; }
+  .h-section { @apply font-display text-[2.4rem] font-normal leading-[1.04] sm:text-5xl lg:text-6xl; letter-spacing: -0.02em; }
+  .lede { @apply max-w-xl text-base leading-relaxed sm:text-lg; }
+
+  /* Buttons — sans, sentence-tracking, thin and quiet */
+  .btn { @apply inline-flex min-h-[48px] items-center justify-center gap-2.5 whitespace-nowrap rounded-[2px] px-7 py-3 font-body text-[0.8rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-300; }
+  .btn-bronze { @apply bg-bronze text-cream-card hover:bg-bronze-dark; }
+  .btn-dark { @apply bg-ink text-cream hover:bg-bronze-dark; }
+  .btn-outline-dark { @apply border border-ink/25 text-ink hover:border-bronze hover:text-bronze-dark; }
+  .btn-outline-light { @apply border border-white/30 text-white hover:border-bronze-light hover:text-bronze-light; }
+
+  /* Underline that draws in on hover (links, nav) */
+  .link-draw { @apply relative; }
+  .link-draw::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1px;
+    background: currentColor; transform: scaleX(0); transform-origin: right;
+    transition: transform .5s var(--ease-out);
+  }
+  .link-draw:hover::after, .link-draw[aria-current='true']::after { transform: scaleX(1); transform-origin: left; }
+
+  /* Reusable editorial helpers */
+  .eyebrow { @apply font-body text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-bronze; }
+  .rule { @apply h-px w-full bg-line; }
+  .edge-l { padding-left: var(--edge); }
+  .edge-r { padding-right: var(--edge); }
+
+  /* Image placeholder pattern. Warm paper now (was dark hatch). */
+  .hatch {
+    background-color: #E7E0D3;
+    background-image: repeating-linear-gradient(135deg, rgba(32,32,29,.035) 0 1px, transparent 1px 14px);
+  }
+  /* Short bronze line used by legacy section heads */
+  .weld { @apply h-px w-14 bg-bronze; }
+}
