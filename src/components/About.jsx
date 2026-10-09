@@ -269,7 +269,7 @@ export default function About() {
                       sm:text-[2.8rem]
                     "
                   >
-                    15+
+                    25+
                   </p>
 
                   <p
@@ -373,7 +373,7 @@ export default function About() {
                   md:text-[0.94rem]
                 "
               >
-                For more than 15 years, the workshop has worked on custom
+                For more than 25 years, the workshop has worked on custom
                 iron gates, doors, windows, grills, balcony and stair
                 railings, staircases, jhulas, chairs, seating and other iron
                 furniture. Each project starts with your requirement and is

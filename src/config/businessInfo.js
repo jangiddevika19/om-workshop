@@ -7,7 +7,7 @@ export const businessInfo = {
   businessName: 'OM WORKSHOP',
   tagline: 'IRON WORKS & CUSTOM FABRICATION',
   ownerName: 'Omprakash Jangid',
-  foundedYear: 2010,
+  foundedYear: 2001,
 
   // WhatsApp: country code + number, digits only (e.g. "919876543210")
   whatsappNumber: '9460837072',

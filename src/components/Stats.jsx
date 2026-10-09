@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { big: '15+', label: 'Years of Experience' },
-  { big: 'Since', sub: '2010', label: 'Working in Iron Fabrication' },
+  { big: '25+', label: 'Years of Experience' },
+  { big: 'Since', sub: '2001', label: 'Working in Iron Fabrication' },
   { big: 'Custom', label: 'Design & Fabrication' },
   { big: 'Built', label: 'Around Your Requirements' },
 ];

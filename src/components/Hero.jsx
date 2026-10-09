@@ -179,7 +179,7 @@ export default function Hero() {
                   sm:tracking-[0.24em]
                 "
               >
-                15+ years of craftsmanship
+                25+ years of craftsmanship
               </span>
             </motion.div>
 
@@ -365,7 +365,7 @@ export default function Hero() {
             "
           >
             {/* =================================================
-                15+ PREMIUM SEAL
+                25+ PREMIUM SEAL
             ================================================= */}
 
             <motion.div
@@ -418,7 +418,7 @@ export default function Hero() {
                     lg:text-[1.8rem]
                   "
                 >
-                  15+
+                  25+
                 </span>
 
                 <span
@@ -587,7 +587,7 @@ export default function Hero() {
             </motion.div>
 
             {/* =================================================
-                MOBILE 15+ EXPERIENCE ROW
+                MOBILE 25+ EXPERIENCE ROW
             ================================================= */}
 
             <motion.div
@@ -625,7 +625,7 @@ export default function Hero() {
                     text-ink
                   "
                 >
-                  15+
+                  25+
                 </span>
               </div>
 

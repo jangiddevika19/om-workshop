@@ -18,7 +18,7 @@ export const processSteps = [
 ];
 
 export const whyCards = [
-  { icon: FaHistory, title: '15+ Years of Experience', text: 'Years of practical experience in iron fabrication.' },
+  { icon: FaHistory, title: '25+ Years of Experience', text: 'Years of practical experience in iron fabrication.' },
   { icon: FaPencilRuler, title: 'Custom Designs', text: 'Products can be created according to individual requirements.' },
   { icon: FaRulerCombined, title: 'Made to Your Requirements', text: 'Designs and dimensions can be discussed according to the project.' },
   { icon: FaShieldAlt, title: 'Strong Construction', text: 'Focus on practical and durable ironwork.' },

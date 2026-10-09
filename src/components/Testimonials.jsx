@@ -15,7 +15,7 @@ export default function Testimonials() {
         <SectionHead
           id="testi-title"
           title="Built Through Experience"
-          sub="15+ years of practical experience, custom fabrication and work delivered according to customer requirements."
+          sub="25+ years of practical experience, custom fabrication and work delivered according to customer requirements."
         />
 
         <div className="grid gap-6 lg:grid-cols-12">
@@ -24,11 +24,11 @@ export default function Testimonials() {
             <div className="flex h-full flex-col justify-between bg-ink p-8 text-bone sm:p-10">
               <div>
                 <span className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-bronze-light">
-                  Since 15+ Years
+                  Since 25+ Years
                 </span>
 
                 <div className="mt-6 font-display text-6xl font-bold leading-none text-bone sm:text-7xl">
-                  15+
+                  25+
                 </div>
 
                 <h3 className="mt-4 font-display text-2xl font-bold sm:text-3xl">
