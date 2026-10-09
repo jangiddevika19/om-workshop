@@ -13,7 +13,7 @@ export const businessInfo = {
   whatsappNumber: '9460837072',
   // Shown on the site and used for tel: links
   phoneNumber: '+91 9460837072',
-  facebookUrl: 'https://facebook.com/',
+  facebookUrl: 'https://www.facebook.com/share/1DhAHigXXq/',
 
   // Pre-filled WhatsApp messages
   messages: {
