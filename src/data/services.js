@@ -19,4 +19,5 @@ export const services = [
   { id: 10, title: 'Balcony Railings', icon: MdOutlineBalcony, image: img('railings'), alt: 'Balcony railing in iron', text: 'Custom balcony railing designs.' },
   { id: 11, title: 'Decorative Iron Work', icon: GiHammerNails, image: img('custom'), alt: 'Decorative ironwork', text: 'Decorative and artistic ironwork.' },
   { id: 12, title: 'Custom Fabrication', icon: GiAnvil, image: img('custom'), alt: 'Custom metal fabrication', text: 'Completely customized fabrication based on customer requirements.' },
+  { id: 13, title: 'Biliya Farma', icon: GiAnvil, image: '/images/services/biliya-farma.png', alt: 'Steel Biliya Farma construction mould', text: 'Strong steel Biliya Farma moulds for construction work.' },
 ];
